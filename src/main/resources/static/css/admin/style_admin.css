@@ -1,0 +1,89 @@
+/* import google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #dfe9f5;
+}
+
+.container {
+  display: flex;
+  max-width: 100%; /* Đảm bảo rằng container không vượt quá kích thước của trình duyệt */
+}
+
+nav {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: #fff;
+  width: 280px;
+  overflow-y: auto; /* Cho phép phần danh sách cuộn khi nội dung vượt quá kích thước */
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  text-align: center;
+  margin: 10px 0 0 10px;
+}
+
+.logo img {
+  height: 45px;
+  width: 45px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.logo span {
+  font-weight: bold;
+  padding-left: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+a {
+  position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  display: block; /* Chuyển sang block để các mục menu hiển thị theo hàng dọc */
+  padding: 10px 20px; /* Thêm khoảng cách phía trái và phải cho các mục menu */
+}
+
+nav .fas {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+
+a:hover {
+  background: #eee;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 20px;
+}
