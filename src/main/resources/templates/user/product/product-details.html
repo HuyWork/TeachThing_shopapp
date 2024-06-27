@@ -64,38 +64,6 @@
                             </a>
                             <a href="#" class="btn btn-light border border-secondary py-2 icon-hover mb-2 font-weight-bold"> <i class="me-1 fa fa-heart fa-lg"></i> Save </a>
                         </div>
-                        <div class="container mt-5">
-                            <form action="/feedback" method="post">
-                                <input type="hidden" id="productId" name="productId" th:value="${product.product_id}">
-
-                                <label for="detail">Nội dung:</label><br>
-                                <textarea id="detail" name="detail" rows="4" cols="50"></textarea><br>
-
-                                <label for="rate">Đánh giá:</label>
-                                <input type="number" id="rate" name="rate" min="1" max="5"><br>
-
-                                <input type="submit" value="Gửi phản hồi">
-                            </form>
-                        </div>
-                        <div class="container mt-5">
-                            <h2>Danh sách Feedback</h2>
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th>Username</th>
-                                    <th>Detail</th>
-                                    <th>Rate</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr th:each="feedback : ${feedbacks}">
-                                    <td th:text="${feedback.user.username}"></td>
-                                    <td th:text="${feedback.detail}"></td>
-                                    <td th:text="${feedback.rate}"></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
                     </div>
                 </div>
             </div>
